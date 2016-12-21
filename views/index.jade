@@ -8,6 +8,6 @@ block content
             input#meetingName(name="meetingName" required)
             input#create(type="submit", class="button")
         h3 Or search for a meeting by entering the Meeting ID below
-        form#searchMeet
-            input#meetingID(name="meetingName" required)
+        form#searchMeet(action="schedule" method="get")
+            input#meetingID(required name="meetingId" placeholder="Meeting ID")
             input#search(type="submit", class="button")
